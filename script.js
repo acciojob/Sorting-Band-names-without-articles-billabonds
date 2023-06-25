@@ -1,4 +1,3 @@
-//your code here
 
 let touristSpots = ['The Rolling Stones', 'Led Zeppelin', 'The Beatles', 'Pink Floyd'];
 
@@ -16,3 +15,27 @@ console.log(touristSpots.sort((a,b) =>{
 	if(str1 > str2){return 1;}
 	return 0;
 }));
+
+const bandList = document.getElementById(band);
+
+for(let i=0;i<touristSpots.length;i++){
+	const li = document.createElement('li');
+	li.textContent = touristSpots[i];
+	bandList.appendChild(li);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
