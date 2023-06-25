@@ -1,6 +1,6 @@
 //your code here
 
-let touristSpots = ['The Virupaksha Temple', 'Victoria Memorial', 'Tajmahal'];
+let touristSpots = ['The Rolling Stones', 'Led Zeppelin', 'The Beatles', 'Pink Floyd'];
 
 console.log(touristSpots.sort());
 
