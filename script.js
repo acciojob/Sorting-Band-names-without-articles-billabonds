@@ -22,7 +22,10 @@ function removeArticles(name) {
 bandNames.sort((a, b) => {
   const nameA = removeArticles(a);
   const nameB = removeArticles(b);
-  return nameA.localeCompare(nameB);
+  // return nameA.localeCompare(nameB);
+	if(nameA < nameB){return -1;}
+	if(nameA > nameB){return 1;}
+	return 0;
 });
  
 // Get the <ul> element by its id
@@ -34,11 +37,6 @@ for (let i = 0; i < bandNames.length; i++) {
   li.textContent = bandNames[i];
   bandList.appendChild(li);
 }
-
-
-
-
-
 
 
 // let touristSpots = ['The Rolling Stones', 'Led Zeppelin', 'The Beatles', 'Pink Floyd'];
